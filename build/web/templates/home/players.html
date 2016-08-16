@@ -1,0 +1,12 @@
+
+    <%_.each(playersDetails, function (player){
+        if (!_.isUndefined(player)){%>
+          <div>
+            <span><%=player.name%></span> - <span><%=player.score%></span>
+            <%if (player.playing) {%>
+              <span> * </span>
+              <%}%>
+              (<span><%=player.balls%></span>)
+            </div>
+        <%}
+      })%>

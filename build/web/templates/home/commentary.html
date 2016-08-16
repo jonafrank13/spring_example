@@ -1,0 +1,27 @@
+
+    <table class="table table-hover text-center">
+        <thead>
+            <tr>
+                <th>Balls</th>
+                <th>Player</th>
+                <th>Runs</th>
+                <th>Score</th>
+            </tr>
+        </thead>
+
+        <tbody id="tBody">
+            <%_.forEach(ballUpdate, function (update) {%>
+              <tr>
+                <td><%=update.overs%></td>
+                <td><%=update.playerName%></td>
+                <td><%=update.runs%></td>
+                <td><%=update.score%></td>
+              </tr>
+           <%})%>
+        </tbody>
+      </table>
+    </div>
+  </table>
+  <%if(recquiredRuns >0 && (oversLeft*10)%10 == 0){%>
+    <span id="currentUpdate" class="font35" ><%=oversLeft%> Overs left. <%=recquiredRuns%>  runs to win </span>
+  <%}%>

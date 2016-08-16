@@ -1,0 +1,214 @@
+/* Header */
+header{
+  height : 90px;
+  background-image: linear-gradient(to bottom,#ababab 0,#131c23 100%);
+  text-align: center;
+}
+
+.header-img{
+  float: right;
+  width: 8%;
+}
+
+.header-text{
+  float: right;
+  color: #131c23;
+  font-size: 45px;
+}
+
+img{
+  transition: all 1s;
+  width : 100%;
+}
+
+.nav-tabs>li.active>a, .nav-tabs>li.active>a:hover, .nav-tabs>li.active>a:focus{
+  background-color: #c5c7ca;
+}
+
+/*  body  */
+
+body{
+  background-color: #131c23;
+  background-size: cover;
+  -webkit-transition: background-image 0.2s ease-in-out;
+  transition: background-image 1s ease-in-out;
+}
+
+.main-body{
+  margin-top: 30px;
+  height: 400px;
+}
+.height100{
+  height : 100%;
+}
+
+.score-row{
+  height: 60%;
+  margin-bottom: 20px;
+}
+
+.overs-row{
+  height: 40%;
+  margin-bottom: 20px;
+}
+.overs-column{
+  height : 87%;
+}
+.recquired-column{
+  height : 87%;
+}
+.title{
+  height: 25%;
+  font-size: 20px;
+}
+.number{
+  height: 75%;
+  font-size: 45px;
+}
+.pos-top10{
+  position: relative;
+  top: 10px;
+}
+.score-card{
+  font-size: 90px;
+  top: 20%;
+}
+.box{
+  background-image: linear-gradient(to top,#c5c7ca,#94959a 65%);
+  background-color: #c5c7ca;
+  width:100%;
+  height:100%;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.41);
+  position: relative;
+  perspective: 1000px;
+  transition: 0.6s;
+}
+.flip{
+  transform: rotateX(360deg);
+}
+
+/* Stats */
+
+.stats-row{
+  height: 90%
+}
+
+.stats-col{
+  width: 100%;
+  height: 100%;
+  overflow-y: scroll;
+}
+
+.stats-col::-webkit-scrollbar { 
+    display: none; 
+}
+
+.scoreTable{
+  padding: 10px;
+}
+
+.font35{
+  font-size: 35px;
+}
+.playersInfo{
+  font-size: 45px;
+}
+
+/*  Footer  */
+
+footer{
+  width: 100%;
+  position : fixed;
+  bottom : 0;
+  z-index:-1;
+}
+
+.footer-img{
+  position: fixed;
+  bottom: 0;
+}
+
+.circle {
+	width: 60px;
+	height: 60px;
+  border : 20px solid #5d6165;
+  background-color:#e6e7e7;
+  border-width :10px;
+  border-radius : 50%;
+  transition : all 1.2s;
+  position : fixed;
+  bottom :70px;
+  z-index: 1;
+  margin-left:50px;
+  margin-top:50px;
+  padding-left: 15px;
+  padding-top: 11px;
+}
+.earphone:hover {
+  transform: rotate(45deg);
+}
+.circle:hover  ~ .enlarge{
+  width : 400px;
+  padding-left :50px;
+}
+
+.square:hover {
+  width : 400px;
+  padding-left :50px;
+}
+
+.square{
+  position : fixed;
+  bottom : 70px;
+  width : 1px;
+  height:60px;
+  background-color :#5d6165;
+  transition :all 0.5s;
+  margin-left:80px;
+  margin-top:50px;
+  border-width :15px;
+  border-radius : 0px 20px 20px 0px;
+  overflow:hidden;
+  padding-top :10px;
+  color : white;
+}
+.glyphicon{
+  position: relative;
+  transition: all 1s;
+  transform: scale(2);
+  color: #4e5358;
+}
+.forward{
+  right: 50px;
+}
+.forward:hover{
+  background-color: #ffffff;
+}
+.glyphicon-forward:hover {
+  transform: scale(2.5);
+}
+a{
+  color : #4e5358;
+}
+.winning-logo{
+    top: -50px;
+    width: 5%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: -225px;
+    z-index: -1;
+    transition: all 2s;
+
+}
+.winning-logo-end{
+  width: 75%;
+  opacity: 0.5;
+}
+
+.end-table{
+  width: 80%;
+  margin: auto;
+  background-color: #ccd5d9;
+  color: #131c23;
+  z-index: 9999;
+}
